@@ -23,7 +23,8 @@ class AppAsset extends AssetBundle
         'css/site.css',
         'css/normalize.css',
         'css/style.css',
-        'css/font-awesome.min.css'
+        'css/font-awesome.min.css',
+        'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap',
     ];
     public $js = [
     ];

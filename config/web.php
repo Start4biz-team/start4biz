@@ -9,11 +9,17 @@ $config = [
     'bootstrap' => ['log'],
     'defaultRoute' => 'home/index',
     'language' => 'ru',
-    'name' => 'Start4.biz - Лучшие условия лизинга для Вашего бизнеса',
+    'name' => 'Start4.biz',
     'layout' => 'start4biz',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
+    ],
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+            'layout' => 'main',
+        ],
     ],
     'components' => [
         'request' => [
