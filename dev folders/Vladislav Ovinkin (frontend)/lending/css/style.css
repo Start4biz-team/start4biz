@@ -215,13 +215,10 @@
 
 .content {
     margin-top: 100px;
-    background: url('../img/background_about.jpg') center / cover rgba(219, 219, 219, 0.72);
+    padding-bottom: 190px;
+    background-color:#efefef;
     font-family: 'nunitosans-semibold', sans-serif;
     text-align: justify;
-}
-
-.content-opacity-layer {
-    background:  rgba(219, 219, 219, 0.72);
 }
 
 /* .about {} */
@@ -237,6 +234,7 @@
     line-height: 28px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    color: #333333;
 }
 
 .about-article {
@@ -262,20 +260,35 @@
     text-align: left;
     font-size: 18px;
     line-height: 25px;
+    color: #333333;
+}
+
+.about-article-url {
+    text-decoration: none;
+    color: #333333;
+}
+
+.about-article-url:hover {
+    text-decoration: underline;
 }
 
 .about-ask-question-button {
     display: block;
     text-decoration: none;
     outline: none;
-    padding: 8px 22px;
-    margin: 30px auto 0;
+    padding: 7px 22px;
+    margin: 40px 360px 0;
     width: 146px;
-    background: rgba(251, 250, 255, 0.3);
-    color: #333333;
+    background: #445B94;
+    color: #FFFFFF;
     border: 1px solid #636164;
     box-sizing: border-box;
     border-radius: 4px;
+}
+
+.about-ask-question-button:hover {
+    background: rgba(50, 50, 50, 0.3);
+    color: #ffffff;
 }
 
 .about-ask-question-button-text {
@@ -288,29 +301,83 @@
     letter-spacing: 1px;
 }
 
-.about-ask-question-button:hover {
-    background: rgba(50, 50, 50, 0.3);
-    color: #ffffff;
-}
-
 .h-line {
-    margin: 128px auto 0;
+    margin: 139px auto 0;
     width: 1210px;
     height: 1px;
     background: #000000;
 }
 
-/* .contacts {} */
+.contacts-article {
+    margin: 120px 80px 0;
+    display: flex;
+}
 
-/* .contacts-header {} */
+.contacts-map {
+    box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.25);
+}
 
-/* .contacts-article {} */
+.contacts-text {
+    margin-left: 80px;
+}
 
-/* .contacts-map {} */
+.contacts-text-header {
+    font-family: 'roboto-light', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 48px;
+}
 
-/* .contacts-text-intro {} */
+.contacts-text-contact {
+    font-family: 'roboto-light', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1px;;
+}
 
-/* .contacts-text-contact {} */
+.contacts-text-email {
+    text-decoration: none;
+    color: #333333;
+}
+
+.contacts-text-email:hover {
+    text-decoration: underline;
+}
+
+.contacts-text-phone {
+    text-decoration: none;
+    color: #333333;
+}
+
+.contacts-text-phone:hover {
+    text-decoration: underline;
+}
+
+.contacts-text-map-see {
+    font-family: 'roboto-light', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.contacts-text-map-see:hover {
+    text-decoration: underline;
+}
+
+.contacts-text-map-see:active {
+    text-decoration: underline;
+}
+
+.contacts-text-map-see:visited {
+    text-decoration: none;
+}
 
 .main-footer {
     padding: 20px 80px;
