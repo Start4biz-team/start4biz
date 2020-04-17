@@ -1,5 +1,5 @@
 .work-step {
-   outline: 1px solid blue;
+   
    position: relative;
    display: flex; 
    flex-direction: column;
