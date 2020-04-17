@@ -1,6 +1,8 @@
 <?php
 
 use app\assets\AppAsset;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
 use yii\helpers\Html;
 
 AppAsset::register($this);
@@ -27,7 +29,7 @@ AppAsset::register($this);
                     </span>
             </div>
             <a href="<?= \yii\helpers\Url::home() ?>" class="header-up-logo-link" title="На главную страницу">
-                <img class="header-up-logo" src="img/pre-logo.png" width="40" height="30" alt="Start4.biz logo" />
+                <img class="header-up-logo" src="/img/pre-logo.png" width="40" height="30" alt="Start4.biz logo" />
             </a>
             <div class="header-up-right">
                 <a class="header-up-right-email" href="mailto:info@start4.biz" title="Написать письмо">info@start4.biz</a>
@@ -37,12 +39,14 @@ AppAsset::register($this);
         <div class="header-down">
             <nav class="header-down-left-menu">
                 <ul class="header-down-left-menu-list">
-                    <li class="header-down-left-menu-item"><a href="#" class="header-down-left-menu-link">О проекте</a></li>
+                    <li class="header-down-left-menu-item"><a href="/home/about" class="header-down-left-menu-link">О проекте</a></li>
                     <li class="header-down-left-menu-item"><a href="#" class="header-down-left-menu-link">Бизнесу</a></li>
                     <li class="header-down-left-menu-item"><a href="#" class="header-down-left-menu-link">Финансовым организациям</a></li>
-                    <li class="header-down-left-menu-item"><a href="#" class="header-down-left-menu-link">Контакты</a></li>
+                    <li class="header-down-left-menu-item"><a href="/home/contacts" class="header-down-left-menu-link">Контакты</a></li>
                 </ul>
             </nav>
+
+
             <a class="header-down-lk" href="#">Личный кабинет</a>
             <div class="header-down-right-menu">
                 <ul class="header-down-right-menu-list">

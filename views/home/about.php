@@ -1,16 +1,9 @@
 <?php
-
-/* @var $this yii\web\View */
-
-use yii\helpers\Html;
-
-$this->title = 'About';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
 <section class="about">
     <h1 class="about-header">О компании</h1>
     <article class="about-article">
-        <img class="about-article-image" src="img/about-photo.png" alt="Фото" width="216" height="268">
+        <img class="about-article-image" src="/img/about-photo.png" alt="Фото" width="216" height="268">
         <div class="about-article-text-block">
             <p class="about-article-text">
                 Добрый день!

@@ -332,8 +332,12 @@
     background: #000000;
 }
 
+.contacts {
+    padding-top: 120px;
+}
+
 .contacts-article {
-    margin: 120px 80px 0;
+    margin: 0 80px;
     display: flex;
 }
 
