@@ -1,0 +1,121 @@
+.work-step {
+   outline: 1px solid blue;
+   position: relative;
+   display: flex; 
+   flex-direction: column;
+   justify-content: center; 
+   width: 475px;
+   padding: 40px 438px 50px 527px;
+}
+
+.work-step--content {
+   /* outline: 1px solid blue; */
+   width: 162px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   min-width: 162px;
+}
+
+.work-step--content_rig {
+   align-self: flex-end;
+   min-width: 235px;
+}
+
+.work-step--span_l {
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: normal;
+   font-weight: 200;
+   font-size: 18px;
+   line-height: 25px;
+   letter-spacing: 1px;
+}
+
+.work-step--span_m { 
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: normal;
+   font-weight: 200;
+   font-size: 14px;
+   line-height: 19px;
+  letter-spacing: 1px;;
+}
+
+.work-step--text {
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 10px;
+   line-height: 14px;
+   letter-spacing: 1px;
+   margin: 5px 0 0 0;
+}
+
+.work-step--button {
+   margin-right: 94px;
+   margin-top: 50px;
+   border: none; 
+   border-radius: 4px;
+   background:  #A0A0A0;
+   outline: none;
+   width: 146px;
+   right: 38px;
+   align-self: center;
+}
+
+.work-step--button_text {
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 12px;
+   line-height: 16px;
+   margin: 5px 0 5px 0;
+}
+
+.work-step--svg {
+   position: absolute;
+}
+
+.work-step--svg-circle-step-one {
+   left: 702px;
+   top: 44px;
+}
+
+.work-step--svg-border-step-one {
+   left: 715px;
+   top: 72px;
+}
+
+.work-step--svg-circle-step-two {
+   left: 702px;
+   top: 149px;
+}
+
+.work-step--svg-border-step-two {
+   left: 715px;
+   top: 177px;
+}
+
+.work-step--svg-circle-step-three {
+   left: 702px;
+   top: 254px;
+}
+
+.work-step--svg-border-step-three {
+   left: 715px;
+   top: 284px;
+}
+
+.work-step--svg-circle-step-four {
+   left: 702px;
+   top: 363px;
+}
+
+.work-step--svg-border-step-four {
+   left: 715px;
+   top: 393px;  
+}
+
+.work-step--svg-circle-step-five {
+   left: 702px;
+   top: 470px;
+}

@@ -22,28 +22,34 @@ AppAsset::register($this);
     <header class="main-header">
         <div class="header-up">
             <div class="header-up-left">
-                Санкт-Петербург, пл. Карла Фаберже, д8
+                    <span class="header-up-left-adress">
+                        Санкт-Петербург, пл. Карла Фаберже, д8
+                    </span>
             </div>
+            <a href="<?= \yii\helpers\Url::home() ?>" class="header-up-logo-link" title="На главную страницу">
+                <img class="header-up-logo" src="img/pre-logo.png" width="40" height="30" alt="Start4.biz logo" />
+            </a>
             <div class="header-up-right">
-                <a class="header-up-right-email" href="mailto:info@start4.biz">info@start4.biz</a>
+                <a class="header-up-right-email" href="mailto:info@start4.biz" title="Написать письмо">info@start4.biz</a>
                 <a class="header-up-right-phone" href="tel:+79111299351" title="Просто позвоните нам!">+7 911 129-93-51</a>
             </div>
         </div>
         <div class="header-down">
-            <nav class="header-down-main-menu">
-                <ul class="header-down-main-menu-list">
-                    <li class="header-down-main-menu-item"><a href="#" class="header-down-main-menu-link">product 1</a></li>
-                    <li class="header-down-main-menu-item"><a href="#" class="header-down-main-menu-link">product 2</a></li>
-                    <li class="header-down-main-menu-item"><a href="#" class="header-down-main-menu-link">product 3</a></li>
+            <nav class="header-down-left-menu">
+                <ul class="header-down-left-menu-list">
+                    <li class="header-down-left-menu-item"><a href="#" class="header-down-left-menu-link">О проекте</a></li>
+                    <li class="header-down-left-menu-item"><a href="#" class="header-down-left-menu-link">Бизнесу</a></li>
+                    <li class="header-down-left-menu-item"><a href="#" class="header-down-left-menu-link">Финансовым организациям</a></li>
+                    <li class="header-down-left-menu-item"><a href="#" class="header-down-left-menu-link">Контакты</a></li>
                 </ul>
             </nav>
-            <a href="<?= \yii\helpers\Url::home() ?>"><img class="header-down-logo" src="img/temp-logo.png" width="40" height="30" alt="Start4.biz logo" /></a>
-            <div class="header-down-links">
-                <ul class="header-down-links-list">
-                    <li class="header-down-links-item"><a href="#" class="header-down-links-link">О проекте</a></li>
-                    <li class="header-down-links-item"><a href="#" class="header-down-links-link">Контакты</a></li>
-                    <li class="header-down-links-item"><a href="#" class="header-down-links-link">Бизнесу</a></li>
-                    <li class="header-down-links-item"><a href="#" class="header-down-links-link">Финансовым организациям</a></li>
+            <a class="header-down-lk" href="#">Личный кабинет</a>
+            <div class="header-down-right-menu">
+                <ul class="header-down-right-menu-list">
+                    <li class="header-down-right-menu-item"><a href="#" class="header-down-right-menu-link">Кредиты</a></li>
+                    <li class="header-down-right-menu-item"><a href="#" class="header-down-right-menu-link">Эквайринг</a></li>
+                    <li class="header-down-right-menu-item"><a href="#" class="header-down-right-menu-link">Овердрафты</a></li>
+                    <li class="header-down-right-menu-item"><a href="#" class="header-down-right-menu-link">Лизинг</a></li>
                 </ul>
             </div>
         </div>
@@ -52,28 +58,35 @@ AppAsset::register($this);
         <?= $content ?>
     </main>
     <footer class="main-footer">
-        <div class="footer-info-left">
-            <ul class="footer-info-left-list">
-                <li class="footer-info-left-item"><a href="#" class="footer-info-left-link">Политика конфиденциальности</a></li>
-                <li class="footer-info-left-item"><a href="#" class="footer-info-left-link">Пользовательское соглашение</a></li>
-                <li class="footer-info-left-item"><a href="#" class="footer-info-left-link">Согласие на обработку персональных данных</a></li>
-                <li class="footer-info-left-item"><a href="#" class="footer-info-left-link">Форма обратной связи</a></li>
-            </ul>
+        <div class="footer-info">
+            <div class="footer-info-left">
+                <ul class="footer-info-left-list">
+                    <li class="footer-info-left-item"><a href="#" class="footer-info-left-link">О проекте</a></li>
+                    <li class="footer-info-left-item"><a href="#" class="footer-info-left-link">Финансовым организациям</a></li>
+                    <li class="footer-info-left-item"><a href="#" class="footer-info-left-link">Бизнесу</a></li>
+                    <li class="footer-info-left-item"><a href="#" class="footer-info-left-link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-info-right">
+                <ul class="footer-info-right-list">
+                    <li class="footer-info-right-item"><a href="#" class="footer-info-right-link">Политика конфиденциальности</a></li>
+                    <li class="footer-info-right-item"><a href="#" class="footer-info-right-link">Пользовательское соглашение</a></li>
+                    <li class="footer-info-right-item"><a href="#" class="footer-info-right-link">Согласие на обработку персональных данных</a></li>
+                    <li class="footer-info-right-item"><a href="#" class="footer-info-right-link">Форма обратной связи</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-info-empty"></div>
-        <div class="footer-social-links-block">
-            <a href="#" class="footer-social-link" title="Мы во вконтакте"><i class="fa fa-vk fa-lg"></i></a>
-            <a href="#" class="footer-social-link" title="Наш инстаграмм"><i class="fa fa-instagram fa-lg"></i></a>
-            <a href="#" class="footer-social-link" title="Наш канал на youtube"><i class="fa fa-youtube fa-lg"></i></a>
-            <a href="#" class="footer-social-link" title="Мы в facebook"><i class="fa fa-facebook-square fa-lg"></i></a>
-        </div>
-        <div class="footer-info-right">
-            <ul class="footer-info-right-list">
-                <li class="footer-info-right-item"><a href="#" class="footer-info-right-link">О проекте</a></li>
-                <li class="footer-info-right-item"><a href="#" class="footer-info-right-link">Контакты</a></li>
-                <li class="footer-info-right-item"><a href="#" class="footer-info-right-link">Бизнесу</a></li>
-                <li class="footer-info-right-item"><a href="#" class="footer-info-right-link">Финансовым организациям</a></li>
-            </ul>
+        <div class="footer-links">
+            <div class="footer-social-links-block">
+                <a href="#" class="footer-social-link" title="Мы во вконтакте"><i class="fa fa-vk fa-lg"></i></a>
+                <a href="#" class="footer-social-link" title="Наш инстаграмм"><i class="fa fa-instagram fa-lg"></i></a>
+                <a href="#" class="footer-social-link" title="Наш канал на youtube"><i class="fa fa-youtube fa-lg"></i></a>
+                <a href="#" class="footer-social-link" title="Мы в facebook"><i class="fa fa-facebook-square fa-lg"></i></a>
+            </div>
+            <div class="footer-contacts">
+                <a class="footer-email" href="mailto:info@start4.biz" title="Написать письмо">info@start4.biz</a>
+                <a class="footer-phone" href="tel:+79111299351" title="Просто позвоните нам!">+7 911 129-93-51</a>
+            </div>
         </div>
     </footer>
 </div>
