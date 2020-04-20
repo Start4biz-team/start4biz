@@ -320,27 +320,37 @@
 
 .about-ask-question-button {
     margin: 40px 360px 110px;
-    padding: 7px 22px;
     width: 146px;
+}
+
+.be-partner-button {
+    width: 146px;
+}
+
+.page-button {  
+    padding: 7px 22px;
     display: block;
     text-decoration: none;
     outline: none;
     background: #445B94;
-    color: #FFFFFF;
     border: 1px solid #636164;
     box-sizing: border-box;
     border-radius: 4px;
+    color: #FFFFFF;
 }
 
-.about-ask-question-button:hover {
+.page-button:hover {
     background: #2B3349;
+}
+
+.page-button-text {
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
 }
 
 .about-ask-question-button-text {
     font-family: 'roboto-medium', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    text-align: center;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 1px;
@@ -444,7 +454,7 @@
 
 .content-2business {
     margin-top: 100px;
-    padding: 70px 80px;
+    padding: 70px 80px 170px;
     background-color:#efefef;
 }
 
@@ -478,6 +488,7 @@
 
 .to-business-list {
     list-style: none;
+    margin-left: 40px;
 }
 
 .to-business-item {
@@ -513,7 +524,7 @@
 }
 
 .why-we-header {
-    margin: 0 0 50px;
+    margin: 0;
     font-family: 'roboto-light', sans-serif;;
     font-style: normal;
     font-weight: normal;
@@ -523,25 +534,25 @@
 }
 
 .why-we-list {
+    margin: 0 0 0 40px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
-    padding: 0;
-    margin-left: 40px;
 }
 
 .why-we-item {
-    margin-bottom: 120px;
+    margin: 70px 0 30px;
     width: 590px;
 }
 
 /* .why-we-article {} */
 
 .why-we-article-img {
+    margin-right: 20px;
     display: block;
     float: left;
-    margin-right: 20px;
 }
 
 .why-we-article-header {
@@ -563,12 +574,54 @@
     color: #333333;
 }
 
+.why-we-under {
+    margin-right: 95px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Контент страницы "Финансовым организациям" */
 
 .content-2finorg {
     margin-top: 100px;
-    padding-bottom: 190px;
+    padding: 70px 80px 125px;
     background-color:#efefef;
+}
+
+.finorg-info-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .finorg-left-block {} */
+
+.finorg-right-block {
+    margin: 0 0 135px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finorg-info-block-image {
+    margin-bottom: 40px;
+    display: block;
+    width: 335px;
+}
+
+.be-partner-button-text {
+    font-family: 'roboto-regular', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* .finorg-be-partner-button {} */
+
+.why-we-list-finorg {
+    margin-right: 160px;
+}
+
+.why-we-item-finorg {
+    width: 450px;
 }
 
 /* Футер */
