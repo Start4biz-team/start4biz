@@ -1,0 +1,23 @@
+.content-main {
+    margin-top: 100px;
+    padding-bottom: 190px;
+    background-color:#efefef;
+}
+
+.content-about {
+    margin-top: 100px;
+    padding-bottom: 190px;
+    background-color:#efefef;
+}
+
+.content-2business {
+    margin-top: 100px;
+    padding: 70px 80px 170px;
+    background-color:#efefef;
+}
+
+.content-2finorg {
+    margin-top: 100px;
+    padding: 70px 80px 125px;
+    background-color:#efefef;
+}
