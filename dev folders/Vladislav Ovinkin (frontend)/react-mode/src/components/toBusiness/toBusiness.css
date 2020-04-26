@@ -1,0 +1,127 @@
+.to-business {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 224px;
+}
+
+/* .to-business-block {} */
+
+.to-business-header {
+    margin: 0 0 40px;
+    font-family: 'roboto-light', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 48px;
+    color: #333333;
+}
+
+.to-business-text {
+    margin-bottom: 30px;
+    font-family: 'roboto-light', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
+
+.to-business-list {
+    list-style: none;
+    margin-left: 40px;
+}
+
+.to-business-item {
+    margin-bottom: 17px;
+    font-family: 'roboto-light', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: #333333;
+    position: relative;
+}
+
+.to-business-item:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -40px;
+    top: 0;
+    background-image: url(./../../img/list-marker.png);
+}
+
+.to-business-img {
+    display: block;
+    margin-left: 150px;
+}
+
+.h-line {
+    margin: 0 auto;
+    width: 1210px;
+    height: 1px;
+    background: #000000;
+}
+
+.why-we {
+    padding-top: 70px;
+}
+
+.why-we-header {
+    margin: 0;
+    font-family: 'roboto-light', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 48px;
+    color: #333333;
+}
+
+.why-we-list {
+    margin: 0 0 0 40px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.why-we-item {
+    margin: 70px 0 30px;
+    width: 590px;
+}
+
+/* .why-we-article {} */
+
+.why-we-article-img {
+    margin-right: 20px;
+    display: block;
+    float: left;
+}
+
+.why-we-article-header {
+    margin: 0 0 15px;
+    font-family: 'roboto-light', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.why-we-article-text {
+    font-family: 'roboto-light', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.why-we-under {
+    margin-right: 95px;
+    display: flex;
+    justify-content: flex-end;
+}
