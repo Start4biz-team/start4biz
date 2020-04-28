@@ -42,7 +42,7 @@ function ToFinorg() {
                 <div className="finorg-decription">
                     <div className="why-we-item">
                         <figure className="why-we-article">
-                            <img src={coinsImage} width="110" height="110" alt="Стабильные заявки" className="why-we-article-img" />
+                            <img src={coinsImage} alt="Стабильные заявки" className="why-we-article-img" />
                             <figcaption className="why-we-caption">
                                 <h4 className="why-we-article-header">Стабильные заявки</h4>
                                 <p className="why-we-article-text">Предоставляем стабильный поток заявок на финансовые продукты</p>
@@ -51,7 +51,7 @@ function ToFinorg() {
                     </div>
                     <div className="why-we-item">
                         <figure className="why-we-article">
-                            <img src={monitorImage} width="110" height="110" alt="Взаимодействие" className="why-we-article-img" />
+                            <img src={monitorImage} alt="Взаимодействие" className="why-we-article-img" />
                             <figcaption className="why-we-caption">
                                 <h4 className="why-we-article-header">Взаимодействие</h4>
                                 <p className="why-we-article-text">В едином интерфейсе Вы сможете взаимодействовать с заявками</p>
@@ -60,7 +60,7 @@ function ToFinorg() {
                     </div>
                     <div className="why-we-item">
                         <figure className="why-we-article">
-                            <img src={commentImage} width="110" height="110" alt="Коммуникация" className="why-we-article-img" />
+                            <img src={commentImage} alt="Коммуникация" className="why-we-article-img" />
                             <figcaption className="why-we-caption">
                                 <h4 className="why-we-article-header">Коммуникация</h4>
                                 <p className="why-we-article-text">Вы получаете новый канал общения с бизнесом</p>
@@ -69,7 +69,7 @@ function ToFinorg() {
                     </div>
                     <div className="why-we-item">
                         <figure className="why-we-article">
-                            <img src={clockImage} width="110" height="110" alt="Скорость" className="why-we-article-img" />
+                            <img src={clockImage} alt="Скорость" className="why-we-article-img" />
                             <figcaption className="why-we-caption">
                                 <h4 className="why-we-article-header">Скорость</h4>
                                 <p className="why-we-article-text">Быстро реагируем на ваши запросы</p>
