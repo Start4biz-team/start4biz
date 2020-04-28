@@ -31,50 +31,56 @@ class OrderController extends \yii\web\Controller
 
     public function actionGetOrder()
     {
-        \Yii::$app->response->format = \yii\web\Response:: FORMAT_JSON;
-        $order = Order::find()->all();
-        if(count($order) > 0 )
-        {
-            return array('status' => true, 'data'=> $order);
-        }
-        else
-        {
-            return array('status'=>false,'data'=> 'No Order Found');
+        if(\Yii::$app->user->isGuest) {
+            \Yii::$app->response->format = \yii\web\Response:: FORMAT_JSON;
+            return array('status' => false, 'data' => 'Авторизуйтесь для просмотра заявок');
+        } else{
+            \Yii::$app->response->format = \yii\web\Response:: FORMAT_JSON;
+            $order = Order::find()->all();
+            if (count($order) > 0) {
+                return array('status' => true, 'data' => $order);
+            } else {
+                return array('status' => false, 'data' => 'No Order Found');
+            }
         }
     }
 
     public function actionUpdateOrder()
     {
-        \Yii::$app->response->format = \yii\web\Response:: FORMAT_JSON;
-        $attributes = \yii::$app->request->post();
+        if(\Yii::$app->user->isGuest) {
+            \Yii::$app->response->format = \yii\web\Response:: FORMAT_JSON;
+            return array('status' => false, 'data' => 'Авторизуйтесь для редактирования заявок');
+        } else{
+            \Yii::$app->response->format = \yii\web\Response:: FORMAT_JSON;
+            $attributes = \yii::$app->request->post();
 
-        $order = Order::find()->where(['ID' => $attributes['id'] ])->one();
-        if(count($order) > 0)
-        {
-            $order->attributes = \yii::$app->request->post();
-            $order->save();
-            return array('status' => true, 'data'=> 'Order record is updated successfully');
+            $order = Order::find()->where(['ID' => $attributes['id']])->one();
+            if (count($order) > 0) {
+                $order->attributes = \yii::$app->request->post();
+                $order->save();
+                return array('status' => true, 'data' => 'Order record is updated successfully');
 
-        }
-        else
-        {
-            return array('status'=>false,'data'=> 'No Order Found');
+            } else {
+                return array('status' => false, 'data' => 'No Order Found');
+            }
         }
     }
 
     public function actionDeleteOrder()
     {
-        \Yii::$app->response->format = \yii\web\Response:: FORMAT_JSON;
-        $attributes = \yii::$app->request->post();
-        $order = Order::find()->where(['ID' => $attributes['id'] ])->one();
-        if(count($order) > 0 )
-        {
-            $order->delete();
-            return array('status' => true, 'data'=> 'Order record is successfully deleted');
-        }
-        else
-        {
-            return array('status'=>false,'data'=> 'No Order Found');
+        if(\Yii::$app->user->isGuest) {
+            \Yii::$app->response->format = \yii\web\Response:: FORMAT_JSON;
+            return array('status' => false, 'data' => 'Авторизуйтесь для удаления заявок');
+        } else{
+            \Yii::$app->response->format = \yii\web\Response:: FORMAT_JSON;
+            $attributes = \yii::$app->request->post();
+            $order = Order::find()->where(['ID' => $attributes['id']])->one();
+            if (count($order) > 0) {
+                $order->delete();
+                return array('status' => true, 'data' => 'Order record is successfully deleted');
+            } else {
+                return array('status' => false, 'data' => 'No Order Found');
+            }
         }
     }
 
