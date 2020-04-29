@@ -1,15 +1,15 @@
 /* .about {} */
 
 .about-header {
-    margin-left: 356px;
+    margin: 0 0 0 356px;
     padding: 70px 0 50px;
     font-family: 'roboto-light', sans-serif;
-    font-weight: normal;
     font-style: normal;
     text-align: left;
+    font-weight: 300;
     font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 2px;
+    line-height: 48px;
+    letter-spacing: 1px;
     color: #333333;
 }
 
@@ -21,8 +21,10 @@
 }
 
 .about-article {
-    margin: 0 228px 0 80px;
+    margin: 0 80px 0 80px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .about-article-image {
@@ -33,17 +35,19 @@
 
 .about-article-text-block {
     margin-left: 60px;
+    flex-basis: 300px;
+    flex-grow: 1;
 }
 
 .about-article-text {
     margin-top: 0;
     margin-bottom: 25px;
     font-family: 'roboto-light', sans-serif;
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
-    text-align: left;
+    text-align: justify;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 23px;
     color: #333333;
 }
 
@@ -61,8 +65,9 @@
 }
 
 .about-ask-question-button {
-    margin: 40px 360px 110px;
-    width: 146px;
+    margin: 40px 360px 77px;
+    width: 248px;
+    height: 56px;
 }
 
 .be-partner-button {
@@ -70,15 +75,16 @@
 }
 
 .page-button {  
-    padding: 7px 22px;
+    padding: 18px 22px;
     display: block;
     text-decoration: none;
     outline: none;
-    background: #445B94;
+    background: #5A85D4;
     border: 1px solid #636164;
     box-sizing: border-box;
     border-radius: 4px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .page-button:hover {
@@ -94,35 +100,41 @@
 .about-ask-question-button-text {
     font-family: 'roboto-medium', sans-serif;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .h-line {
-    margin: 0 auto;
-    width: 1210px;
+    margin: 0 80px;
+    width: calc(100% - 160px);
     height: 1px;
     background: #000000;
 }
 
 .contacts-article {
-    margin: 120px 80px 0;
+    padding: 120px 80px 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contacts-map {
     box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.25);
+    flex-basis: 620px;
+    flex-grow: 1;
 }
 
 .contacts-text {
     margin-left: 80px;
+    flex-basis: 40%;
+    flex-grow: 1;
 }
 
 .contacts-text-header {
     margin-top: 0;
     margin-bottom: 50px;
     font-family: 'roboto-light', sans-serif;
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
     font-size: 24px;
     line-height: 48px;
@@ -132,12 +144,13 @@
 .contacts-text-contact {
     margin-bottom: 20px;
     font-family: 'roboto-light', sans-serif;
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 1px;
     color: #333333;
+    text-align: justify;
 }
 
 .contacts-text-address {
@@ -190,4 +203,39 @@
 
 .contacts-text-map-see:visited {
     text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .about-article {
+        flex-direction: column;
+        margin: 0 20px 0 20px;
+    }
+    .about-header {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .about-article-image {
+        margin: 0 auto 20px;
+    }
+    .about-article-text-block {
+        margin-left: 20px;
+    }
+    .about-article-text-center{
+        text-align: center;
+    }
+    .about-ask-question-button {
+        margin: 40px auto 110px;
+    }
+    .contacts-map {
+        flex-basis: 100%;
+    }
+    .contacts-text {
+        margin-left: 20px;
+        margin-top: 20px;
+        flex-basis: 100%;
+    }
+    .contacts-text-header {
+        text-align: center;
+    }
+    
 }
