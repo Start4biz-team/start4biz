@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {Switch, Route} from 'react-router-dom';
 import Uc from './../uc/Uc';
 import ToBusiness from './../toBusiness/ToBusiness';
 import ToFinorg from './../toFinorg/ToFinorg';
-import About from './../about/About';
+import About from '../About/About';
+import BestDealBlock from './../BestDealBlock/BestDealBlock';
+import WorkStepContainer from './../../containers/WorkStepContainer';
+import Questions from './../Questions/Questions';
+import PartnersBlock from './../PartnersBlock/PartnersBlock';
 import './content.css';
 
 function Content() {
@@ -34,7 +38,12 @@ function Content() {
                     <Uc />
                 </Route>
                 <Route path="/">
-                    {/* <Main /> */}
+                    <Fragment>
+                        <BestDealBlock />
+                        <WorkStepContainer />
+                        <Questions />
+                        <PartnersBlock />
+                    </Fragment>
                 </Route>
             </Switch>
         </div>

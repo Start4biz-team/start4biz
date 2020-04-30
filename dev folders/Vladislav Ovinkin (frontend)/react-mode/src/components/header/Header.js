@@ -43,7 +43,7 @@ function Header() {
                         <li className="header-down-main-menu-item"><Link to="/contacts" className="header-down-main-menu-link" title="Контакты">
                             <span className="header-down-main-menu-link-text">Контакты</span>
                         </Link></li>
-                        <li className="header-down-main-menu-item"><Link to="/uc" className="header-down-main-menu-link" title="Финансовым организациям">
+                        <li className="header-down-main-menu-item"><Link to="/tofinorg" className="header-down-main-menu-link" title="Финансовым организациям">
                             <span className="header-down-main-menu-link-text">Финансовым&nbsp;организациям</span>
                         </Link></li>
                         <li className="header-down-main-menu-item"><Link to="/uc" className="header-down-main-menu-link" title="Бизнесу">
