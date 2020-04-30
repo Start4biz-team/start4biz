@@ -10,7 +10,7 @@ function Footer() {
                 <li className="footer-left-list-item"><Link to="/uc" className="footer-left-list-link">
                     <span className="footer-left-list-link-text">О&nbsp;проекте</span>
                 </Link></li>
-                <li className="footer-left-list-item"><Link to="/uc" className="footer-left-list-link">
+                <li className="footer-left-list-item"><Link to="/tofinorg" className="footer-left-list-link">
                     <span className="footer-left-list-link-text">Финансовым&nbsp;организациям</span>
                 </Link></li>
                 <li className="footer-left-list-item"><Link to="/uc" className="footer-left-list-link">

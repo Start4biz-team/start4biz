@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './About.css';
+import './about.css';
 import aboutImage from './../../img/about-photo.png';
 
 const mapPath = "https://yandex.ru/map-widget/v1/?um=constructor%3Aaee2bdb40069c5ddf76f5b5ed28e659f95bffe1c3e82a48f3eedf580587f35a5&amp;source=constructor";
