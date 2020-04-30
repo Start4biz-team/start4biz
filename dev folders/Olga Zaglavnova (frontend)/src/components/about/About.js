@@ -20,13 +20,12 @@ class About extends React.Component {
             const contactsTop = contactsArticle.getBoundingClientRect().top;
             const aboutTop = aboutDiv.getBoundingClientRect().top;
             ypos = contactsTop - aboutTop;
-            console.log("here i am - contacts", contactsTop, 'about height=', aboutTop, ypos);
+            
         };
         window.scrollTo(0, ypos);
     };
     render(){
-        console.log(document.baseURI.substring(document.baseURI.lastIndexOf("/") + 1, document.baseURI.length).toLowerCase());
-
+        
         return (
             <>
                 <section className="about">
