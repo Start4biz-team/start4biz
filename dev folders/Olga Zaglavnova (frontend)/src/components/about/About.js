@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './About.css';
 import aboutImage from './../../img/about-photo.png';
 
@@ -47,11 +48,11 @@ class About extends React.Component {
                             </p>
                         </div>
                     </article>
-                    <a href="#" className="page-button about-ask-question-button">
+                    <Link to="/uc" className="page-button about-ask-question-button">
                         <span className="page-button-text about-ask-question-button-text">
                             Задать вопрос
                         </span>
-                    </a>
+                    </Link>
                 </section>
                 <div className="h-line"></div>
                 <article className="contacts-article" href={this.contactsRef}>
