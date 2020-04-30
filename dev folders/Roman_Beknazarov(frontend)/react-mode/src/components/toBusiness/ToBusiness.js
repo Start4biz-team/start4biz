@@ -1,7 +1,6 @@
 import React from 'react';
 import './toBusiness.css';
-import toBusinessImage from './../../img/rectangle-578х405.png';
-import coinsImage from './../../img/coins.png';
+import coinsImage from '../../img/coins.png';
 import monitorImage from './../../img/monitor.png';
 import shieldImage from './../../img/shield.png';
 import clockImage from './../../img/clock.png';
@@ -36,25 +35,25 @@ function ToBusiness() {
             <section className="why-we">
                 <h3 className="why-we-header">Почему мы ?</h3>
                 <div className="why-we-list">
-                    <figure className="why-we-article">
-                        <img src={coinsImage} width="110" height="110" alt="Экономия" className="why-we-article-img"/>
+                    <figure className="why-we-list-item">
+                        <img src={coinsImage} width="72" height="72" alt="Экономия" className="why-we-list-item-img"/>
                         <figcaption className="why-we-caption">
                             <h4 className="why-we-article-header">Экономия</h4>
                             <p className="why-we-article-text">Вы получите коммерческие предложения от многих компаний,
                                 из которых выберете максимально выгодное для Вас</p>
                         </figcaption>
                     </figure>
-                    <figure className="why-we-article">
-                        <img src={monitorImage} width="110" height="110" alt="Удобство" className="why-we-article-img"/>
+                    <figure className="why-we-list-item">
+                        <img src={monitorImage} width="72" height="66" alt="Удобство" className="why-we-list-item-img"/>
                         <figcaption className="why-we-caption">
                             <h4 className="why-we-article-header">Удобство</h4>
                             <p className="why-we-article-text">Оставив всего одну заявку на продукт, Вы получите
                                 предложения от всех компаний-партнеров, зарегистрированных на портале</p>
                         </figcaption>
                     </figure>
-                    <figure className="why-we-article">
-                        <img src={shieldImage} width="110" height="110" alt="Безопасность"
-                             className="why-we-article-img"/>
+                    <figure className="why-we-list-item">
+                        <img src={shieldImage} width="72" height="72" alt="Безопасность"
+                             className="why-we-list-item-img"/>
                         <figcaption className="why-we-caption">
                             <h4 className="why-we-article-header">Безопасность</h4>
                             <p className="why-we-article-text">На портале зарегистрированы финансовые организации,
@@ -62,8 +61,8 @@ function ToBusiness() {
                                 том случае, если Вы акцептуете предложение</p>
                         </figcaption>
                     </figure>
-                    <figure className="why-we-article">
-                        <img src={clockImage} width="110" height="110" alt="Скорость" className="why-we-article-img"/>
+                    <figure className="why-we-list-item">
+                        <img src={clockImage} width="72" height="72" alt="Скорость" className="why-we-list-item-img"/>
                         <figcaption className="why-we-caption">
                             <h4 className="why-we-article-header">Скорость</h4>
                             <p className="why-we-article-text">Все взаимодействие с финансовыми организациями проходит
