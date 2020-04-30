@@ -14,12 +14,12 @@ class About extends React.Component {
         const contactsArticle = document.querySelector(".contacts-article");
         const aboutDiv = document.querySelector(".about");
 
-        let ypos = 0;
+        let ypos = 50;
         if(addr === "contacts"){
             //this.contactsRef.focus();
             const contactsTop = contactsArticle.getBoundingClientRect().top;
             const aboutTop = aboutDiv.getBoundingClientRect().top;
-            ypos = contactsTop - aboutTop;
+            ypos = contactsTop - aboutTop + 50;
             
         };
         window.scrollTo(0, ypos);
