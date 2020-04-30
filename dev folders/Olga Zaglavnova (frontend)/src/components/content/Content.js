@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {Switch, Route} from 'react-router-dom';
+import Uc from './../uc/Uc';
 import ToBusiness from './../toBusiness/ToBusiness';
 import ToFinorg from './../toFinorg/ToFinorg';
-import About from './../about/About';
+import About from '../about/About';
+import BestDealBlock from './../BestDealBlock/BestDealBlock';
+import WorkStepContainer from './../../containers/WorkStepContainer';
+import Questions from './../Questions/Questions';
+import PartnersBlock from './../PartnersBlock/PartnersBlock';
+import Policy from './../Policy/Policy';
 import './content.css';
 
 function Content() {
@@ -11,12 +17,12 @@ function Content() {
             <Switch>
                 <Route path="/About">
                     <div className="content-about">
-                        <About/>
+                        <About />
                     </div>
                 </Route>
                 <Route path="/Contacts">
                     <div className="content-about">
-                        <About/>
+                        <About />
                     </div>
                 </Route>
                 <Route path="/toBusiness">
@@ -29,8 +35,21 @@ function Content() {
                         <ToFinorg />
                     </div>
                 </Route>
+                <Route path="/toPolicy">
+                    <div className="content-2policy">
+                        <Policy />
+                    </div>
+                </Route>
+                <Route path="/uc">
+                    <Uc />
+                </Route>
                 <Route path="/">
-                    it's UNDER CONSTRUCTION
+                    <Fragment>
+                        <BestDealBlock />
+                        <WorkStepContainer />
+                        <Questions />
+                        <PartnersBlock />
+                    </Fragment>
                 </Route>
             </Switch>
         </div>
