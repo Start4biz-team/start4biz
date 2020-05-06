@@ -8,7 +8,7 @@
 }
 
 .partners-block__title {
-    font-family: Roboto;
+    font-family: 'roboto-light', sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size: 24px;
@@ -44,7 +44,7 @@
     color: #FFFFFF;
     width: 248px;
     height: 56px;
-    font-family: Roboto;
+    font-family: 'roboto-light', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -63,7 +63,7 @@
 }
 
 .link--partner-cards {
-    font-family: IBM Plex Sans;
+    font-family: 'roboto-light', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;

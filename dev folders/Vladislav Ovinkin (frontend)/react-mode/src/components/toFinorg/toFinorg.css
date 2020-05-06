@@ -15,7 +15,6 @@
     text-decoration: none;
     outline: none;
     background: #5A85D4;
-    border: 1px solid #636164;
     box-sizing: border-box;
     border-radius: 4px;
     color: #FFFFFF;
@@ -157,11 +156,12 @@
 .why-we-item {
     flex-basis: 50%;
     flex-grow: 1;
-    margin: 10px 0px 90px 0px;
+    margin: 10px 0px 104px 0px;
 }
 .why-we-article-header {
     line-height: 21px;
     font-weight: 300;
+    letter-spacing: 1px;
 }
 .why-we-article-text {
     margin: 0;

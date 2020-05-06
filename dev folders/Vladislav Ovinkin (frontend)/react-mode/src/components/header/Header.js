@@ -46,7 +46,7 @@ function Header() {
                         <li className="header-down-main-menu-item"><Link to="/tofinorg" className="header-down-main-menu-link" title="Финансовым организациям">
                             <span className="header-down-main-menu-link-text">Финансовым&nbsp;организациям</span>
                         </Link></li>
-                        <li className="header-down-main-menu-item"><Link to="/uc" className="header-down-main-menu-link" title="Бизнесу">
+                        <li className="header-down-main-menu-item"><Link to="/tobusiness" className="header-down-main-menu-link" title="Бизнесу">
                             <span className="header-down-main-menu-link-text">Бизнесу</span>
                         </Link></li>
                         <li className="header-down-main-menu-item"><Link to="/uc" className="header-down-main-menu-link" title="Кредиты">

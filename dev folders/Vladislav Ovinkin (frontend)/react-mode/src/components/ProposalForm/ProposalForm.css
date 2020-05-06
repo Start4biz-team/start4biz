@@ -11,7 +11,7 @@
 }
 
 .proposal__step-title {
-    font-family: Roboto;
+    font-family: 'roboto-light', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
@@ -21,7 +21,7 @@
 }
 
 .proposal__step-input-label {
-    font-family: Roboto;
+    font-family: 'roboto-light', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -58,7 +58,7 @@
     border: 1px solid #898989;
     box-sizing: border-box;
     border-radius: 2px;
-    font-family: Roboto;
+    font-family: 'roboto-light', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -81,7 +81,7 @@
 }
 
 .proposal__next-step-link {
-    font-family: Roboto;
+    font-family: 'roboto-light', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -108,7 +108,7 @@
 } 
 
 .proposal__previous-step-link {
-    font-family: Roboto;
+    font-family: 'roboto-light', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -144,7 +144,7 @@
 }
 
 .proposal-success__title {
-    font-family: Roboto;
+    font-family: 'roboto-light', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -154,7 +154,7 @@
 }
 
 .proposal-success__content {
-    font-family: Roboto;
+    font-family: 'roboto-light', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 13px;

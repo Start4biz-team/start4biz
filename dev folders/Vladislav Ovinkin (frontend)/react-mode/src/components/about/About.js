@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './about.css';
+import './About.css';
 import aboutImage from './../../img/about-photo.png';
 
 const mapPath = "https://yandex.ru/map-widget/v1/?um=constructor%3Aaee2bdb40069c5ddf76f5b5ed28e659f95bffe1c3e82a48f3eedf580587f35a5&amp;source=constructor";
@@ -14,19 +14,18 @@ class About extends React.Component {
         const contactsArticle = document.querySelector(".contacts-article");
         const aboutDiv = document.querySelector(".about");
 
-        let ypos = 0;
+        let ypos = 50;
         if(addr === "contacts"){
             //this.contactsRef.focus();
             const contactsTop = contactsArticle.getBoundingClientRect().top;
             const aboutTop = aboutDiv.getBoundingClientRect().top;
-            ypos = contactsTop - aboutTop;
-            console.log("here i am - contacts", contactsTop, 'about height=', aboutTop, ypos);
+            ypos = contactsTop - aboutTop + 50;
+            
         };
         window.scrollTo(0, ypos);
     };
     render(){
-        console.log(document.baseURI.substring(document.baseURI.lastIndexOf("/") + 1, document.baseURI.length).toLowerCase());
-
+        
         return (
             <>
                 <section className="about">

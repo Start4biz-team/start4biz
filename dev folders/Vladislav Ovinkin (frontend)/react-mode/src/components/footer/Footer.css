@@ -4,6 +4,7 @@
     background: #EFF3F5;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .footer-left {

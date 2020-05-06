@@ -10,7 +10,7 @@ const PartnerPreview = ({data}) => {
 	return (
 		<div className="partner" onMouseEnter={() => showDescription(true)}
 			onMouseLeave={() => showDescription(false)}>
-            	<img className="" src={imgurl.default} alt={data.name}></img>
+            	<img className="" src={imgurl} alt={data.name}></img>
 			<div className="partner__proc-value">{`${data.procValue} %`}</div>
 			{/* {isShowDescription && <div className="partner__discription">
 				<div>{data.description}</div>

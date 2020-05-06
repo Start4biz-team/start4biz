@@ -1,8 +1,8 @@
-import React, {Fragment, useReducer} from 'react';
+import React, {Fragment} from 'react';
 import { connect } from 'react-redux';
 import './BestDealBlock.css';
 import SliderView from '../SliderView/SliderView';
-import {proposalFormShow} from '../../store/actions/proposalActions';
+//import {proposalFormShow} from '../../store/actions/proposalActions';
 import {popupShow} from '../../store/actions/popupActions';
 import ProposalFormContainer from '../../containers/ProposalFormContainer';
 import Popup from '../Popup/Popup';

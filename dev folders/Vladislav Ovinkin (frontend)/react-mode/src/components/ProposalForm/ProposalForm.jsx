@@ -141,14 +141,14 @@ const ProposalFormNR = (props) => {
 let step = props.step;
 
 const stepForward = () => {
-if(step == 3)
+if(step === 3)
 	return;
 
 	props.dispatch(proposalChangeStep(++step));
 }
 
 const stepBack = () => {
-if(step == 1)
+if(step === 1)
 	return;
 
 	props.dispatch(proposalChangeStep(--step));
@@ -161,9 +161,9 @@ if(props.success)
 	showData = <SuccessStep />
 }
 else {
-	if(step == 1){ showData = <ProposalStep1 stepForward={stepForward}/>}
-	else if(step == 2){showData = <ProposalStep2 whatToBuy={props.whatToBuy} transportPurpose={props.transportPurpose} stepBack={stepBack} stepForward={stepForward}/>}
-	else if(step == 3){showData = <ProposalStep3 summAvPayment={props.summAvPayment} leasingPeriod={props.leasingPeriod} stepBack={stepBack}/>}
+	if(step === 1){ showData = <ProposalStep1 stepForward={stepForward}/>}
+	else if(step === 2){showData = <ProposalStep2 whatToBuy={props.whatToBuy} transportPurpose={props.transportPurpose} stepBack={stepBack} stepForward={stepForward}/>}
+	else if(step === 3){showData = <ProposalStep3 summAvPayment={props.summAvPayment} leasingPeriod={props.leasingPeriod} stepBack={stepBack}/>}
 }
 return (
 	<Fragment>

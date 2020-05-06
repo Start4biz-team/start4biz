@@ -6,7 +6,7 @@ const PartnerCard = ({data}) => {
 	const imgurl = require("../../img/" + data.img);
 	return (
 		<article className="partner-card">
-            	<img className="" src={imgurl.default} alt={data.name}></img>
+            	<img className="" src={imgurl} alt={data.name}></img>
 		</article>
 	)
 }

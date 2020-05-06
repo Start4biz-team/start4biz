@@ -1,18 +1,18 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as booleanActions from './../store/actions/booleanActions';
+import * as booleanActions from './../store/actions/popupActions';
 import { WorkStep } from '../components/WorkStep/WorkStep';
 
 const mapStateToProps = (state) => {
    return {
-      boolean: state.booleanReduser
+      boolean: state.popupReducer
    }
 };
 
 const mapDispatchToProps = dispatch => {
-   const { AddTrue } = bindActionCreators(booleanActions, dispatch);
+   const { popupShow } = bindActionCreators(booleanActions, dispatch);
    return {
-      AddTrue
+      popupShow
    }
 }
 

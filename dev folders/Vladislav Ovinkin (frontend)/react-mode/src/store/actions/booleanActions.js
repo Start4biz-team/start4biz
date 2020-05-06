@@ -11,8 +11,3 @@ export const AddFalse = () => (
       type: BOOL_FALSE 
    }
 );
-   
-
-
-      
-

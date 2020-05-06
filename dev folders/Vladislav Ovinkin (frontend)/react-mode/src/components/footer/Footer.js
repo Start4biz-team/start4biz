@@ -7,21 +7,21 @@ function Footer() {
         <footer className="main-footer">
         <div className="footer-left">
             <ul className="footer-left-list">
-                <li className="footer-left-list-item"><Link to="/uc" className="footer-left-list-link">
+                <li className="footer-left-list-item"><Link to="/about" className="footer-left-list-link">
                     <span className="footer-left-list-link-text">О&nbsp;проекте</span>
                 </Link></li>
                 <li className="footer-left-list-item"><Link to="/tofinorg" className="footer-left-list-link">
                     <span className="footer-left-list-link-text">Финансовым&nbsp;организациям</span>
                 </Link></li>
-                <li className="footer-left-list-item"><Link to="/uc" className="footer-left-list-link">
+                <li className="footer-left-list-item"><Link to="/tobusiness" className="footer-left-list-link">
                     <span className="footer-left-list-link-text">Бизнесу</span>
                 </Link></li>
-                <li className="footer-left-list-item"><Link to="/uc" className="footer-left-list-link">
+                <li className="footer-left-list-item"><Link to="/contacts" className="footer-left-list-link">
                     <span className="footer-left-list-link-text">Контакты</span>
                 </Link></li>
             </ul>
             <ul className="footer-left-list">
-                <li className="footer-left-list-item"><Link to="/uc" className="footer-left-list-link">
+                <li className="footer-left-list-item"><Link to="/policy" className="footer-left-list-link">
                     <span className="footer-left-list-link-text">Политика&nbsp;конфиденциальности</span>
                 </Link></li>
                 <li className="footer-left-list-item"><Link to="/uc" className="footer-left-list-link">
